@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Images</title>
+  <style>
+    /* make images responsive */
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+    
+    /* set up grid */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      grid-gap: 20px;
+      margin: 0 auto;
+      max-width: 1200px;
+      padding: 20px;
+    }
+    
+    /* optional styling */
+    h1 {
+      text-align: center;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Responsive Images Example</h1>
+  <div class="grid">
+    <img src="cane-render.png" alt="Image 1">
+    <img src="hat-render.png" alt="Image 2">
+    <img src="iPhone12pro-map.png" alt="Image 3">
+    <img src="iPhone12pro-lochistory.png" alt="Image 4">
+    <img src="desktop-map.png" alt="Image 5">
+    <img src="desktop-lochistory.png" alt="Image 6">
+    <img src="api.png" alt="Image 7">
+  </div>
+</body>
+</html>
